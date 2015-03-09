@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/user_container"
+                android:background="?selectableItemBackground"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/user_avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="12dp" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/grey"
+                android:gravity="right"
+                android:id="@+id/item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@id/user_container"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-light" />
+        </RelativeLayout>
+
+        <com.xuyazhou.pagramx.view.SquaredFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/show_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <View
+
+                android:id="@+id/bgLike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_like_circle_background" />
+
+            <ImageView
+                android:id="@+id/ivLike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_heart_outline_white" />
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:layout_gravity="bottom"
+                android:id="@+id/location"
+                android:background="#ffd1e2ef"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawableLeft="@mipmap/ic_location_on_black_18dp"
+                android:drawablePadding="20dp" />
+
+        </com.xuyazhou.pagramx.view.SquaredFrameLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/feed_item_des"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:lineSpacingMultiplier="1.2"
+            android:fontFamily="sans-serif-light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+
+            android:paddingRight="8dp">
+
+            <ImageView
+                android:id="@+id/btnLike"
+                android:padding="10dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_heart_outline_grey" />
+
+            <TextSwitcher
+                android:id="@+id/tsLikesCounter"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:inAnimation="@anim/slide_in_likes_counter"
+                android:outAnimation="@anim/slide_out_likes_counter">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/text_grey" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/text_grey" />
+
+
+            </TextSwitcher>
+
+            <ImageView
+                android:id="@+id/btnComments"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_feed_action"
+                android:src="@mipmap/ic_comment_outline_grey" />
+
+            <TextView
+
+                android:layout_gravity="center_vertical"
+                android:id="@+id/comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/text_grey"
+                android:layout_marginRight="8dp" />
+
+
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/btnMore"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_feed_action"
+                android:src="@mipmap/ic_more_grey" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

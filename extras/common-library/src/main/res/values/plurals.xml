@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%dd</item>
+        <item quantity="one">1d</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%dh</item>
+        <item quantity="one">1h</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%dm</item>
+        <item quantity="one">1m</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%ds</item>
+        <item quantity="one">1s</item>
+    </plurals>
+    <plurals name="abbrev_num_weeks_ago">
+        <item quantity="other">%dw</item>
+        <item quantity="one">1w</item>
+    </plurals>
+    <plurals name="others">
+        <item quantity="other">others</item>
+        <item quantity="one">other</item>
+    </plurals>
+    <plurals name="users">
+        <item quantity="other">users</item>
+        <item quantity="one">user</item>
+    </plurals>
+</resources>

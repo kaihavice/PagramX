@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="KitkatStatusBar" parent="MaterialNavigationDrawerTheme.Light.DarkActionBar.TranslucentKitKatStatusBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="FloatingActionButton" parent="@android:style/Widget">
+        <item name="fab_addButtonColorPressed">@color/blue</item>
+        <item name="fab_addButtonColorNormal">@color/blue_2</item>
+        <item name="fab_addButtonPlusIconColor">@android:color/white</item>
+        <item name="fab_labelStyle">@style/FloatingActionButton.Label</item>
+    </style>
+
+    <style name="FloatingActionButton.Label" parent="@android:style/Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:background">@mipmap/bg_fab_label</item>
+        <item name="android:paddingLeft">9.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">9.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="FloatingActionButton.Mini">
+        <item name="fab_colorPressed">@color/blue</item>
+        <item name="fab_colorNormal">@color/blue_2</item>
+        <item name="fab_size">mini</item>
+
+    </style>
+
+
+</resources>

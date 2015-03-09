@@ -1,0 +1,27 @@
+<resources>
+
+    <plurals name="likes_count">
+        <item quantity="one">%d</item>
+        <item quantity="other">%d</item>
+    </plurals>
+    <string name="app_name">PagramX</string>
+
+
+    <string name="wellcom_txt">Fast Beautiful Photo Sharing</string>
+    <string name="addAccount">Add account</string>
+    <string name="logout">Logout</string>
+    <string name="feed">Feed</string>
+    <string name="profile">Profile</string>
+    <string name="likes">Likes</string>
+    <string name="whatshot">What\'s hot</string>
+    <string name="nearby">Nearby</string>
+    <string name="settings">Setttings</string>
+    <string name="about">About</string>
+    <string name="new_photo">New Photo</string>
+    <string name="new_video">New Video</string>
+    <string name="pick_photo">Pick Photo</string>
+    <string name="pick_video">Pick Video</string>
+    <string name="timeouterror" translatable="false">网络访问超时</string>
+    <string name="httperror" translatable="false">网络错误</string>
+    <string name="parseerror" translatable="false">数据解析错误</string>
+</resources>

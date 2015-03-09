@@ -1,2 +1,1 @@
-# PagramX
-this third Insgram android client.
+###根据instrgram官方的API开发的第三方客户端

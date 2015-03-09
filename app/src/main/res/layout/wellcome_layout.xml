@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/wellcome_bg"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_width="190dp"
+        android:layout_height="130dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo_show" />
+
+    <TextView
+        android:layout_marginTop="-10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/grey"
+        android:layout_below="@+id/logo"
+        android:text="@string/wellcom_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.gc.materialdesign.views.ButtonFlat
+        android:id="@+id/button_login"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="#ffe5e1e3"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_out"
+        android:layout_marginBottom="10dp"
+        android:text="Login" />
+
+    <com.gc.materialdesign.views.ButtonFlat
+        android:id="@+id/button_out"
+        android:layout_marginBottom="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="out"
+        android:background="#ffe5e1e3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

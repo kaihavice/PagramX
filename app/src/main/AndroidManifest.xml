@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xuyazhou.pagramx">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".PagramXApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/KitkatStatusBar">
+
+        <activity android:name=".activity.wellcomeAcitivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:value="54d87e89fd98c526390003a3"
+            android:name="UMENG_APPKEY" />
+        <meta-data
+            android:value="Channel ID"
+            android:name="UMENG_CHANNEL" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.ProfileAcitivity" />
+        <activity android:name=".activity.AboutActivity" />
+
+
+    </application>
+
+</manifest>
